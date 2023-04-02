@@ -14,3 +14,13 @@ struct Dish: Identifiable {
     let imageURL: String
     let isSpicy: Bool
 }
+
+extension Dish {
+    static func all() -> [Dish] {
+        [
+            Dish(name: "Kung Pow Chicken", imageURL: "kungpow", isSpicy: true),
+            Dish(name: "Sweet and Sour Chicken", imageURL: "sweet", isSpicy: false),
+            Dish(name: "Spicy Red Chicken", imageURL: "spicy", isSpicy: true)
+        ]
+    }
+}
