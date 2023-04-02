@@ -11,6 +11,7 @@
 		1FBFC8DE29D9EFFF00F3761F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFC8DD29D9EFFF00F3761F /* ContentView.swift */; };
 		1FBFC8E029D9F00400F3761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBFC8DF29D9F00400F3761F /* Assets.xcassets */; };
 		1FBFC8E329D9F00400F3761F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBFC8E229D9F00400F3761F /* Preview Assets.xcassets */; };
+		1FBFC8EB29D9F03800F3761F /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFC8EA29D9F03800F3761F /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1FBFC8DD29D9EFFF00F3761F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FBFC8DF29D9F00400F3761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FBFC8E229D9F00400F3761F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FBFC8EA29D9F03800F3761F /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1FBFC8DB29D9EFFF00F3761F /* DishesBindingApp.swift */,
 				1FBFC8DD29D9EFFF00F3761F /* ContentView.swift */,
+				1FBFC8E929D9F02700F3761F /* Models */,
 				1FBFC8DF29D9F00400F3761F /* Assets.xcassets */,
 				1FBFC8E129D9F00400F3761F /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				1FBFC8E229D9F00400F3761F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FBFC8E929D9F02700F3761F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FBFC8EA29D9F03800F3761F /* Dish.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBFC8EB29D9F03800F3761F /* Dish.swift in Sources */,
 				1FBFC8DE29D9EFFF00F3761F /* ContentView.swift in Sources */,
 				1FBFC8DC29D9EFFF00F3761F /* DishesBindingApp.swift in Sources */,
 			);
