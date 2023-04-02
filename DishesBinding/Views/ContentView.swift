@@ -18,7 +18,7 @@ struct ContentView: View {
                     .font(.title)
             }
             
-            ForEach(model) { dish in
+            ForEach(model.filter { $0.isSpicy == self.isSpicy }) { dish in
                 HStack {
                     Image(dish.imageURL)
                         .resizable()
