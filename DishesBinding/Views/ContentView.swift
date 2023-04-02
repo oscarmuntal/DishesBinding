@@ -13,9 +13,19 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(model) { dish in
-                Image(dish.imageURL)
-                    .resizable()
-                    .frame(width: 100, height: 100)
+                HStack {
+                    Image(dish.imageURL)
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                    
+                    Text(dish.name)
+                        .font(.title)
+                        .lineLimit(nil)
+                    
+                    Image("spicy-icon")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                }
             }
         }
     }
