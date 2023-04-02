@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let model = Dish.all()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            ForEach(model) { dish in
+                Image(dish.imageURL)
+                    .resizable()
+                    .frame(width: 100, height: 100)
+            }
+        }
     }
 }
 
