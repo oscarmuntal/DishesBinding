@@ -12,6 +12,11 @@ struct ContentView: View {
     
     var body: some View {
         List {
+            Toggle(isOn: .constant(false)) {
+                Text("Spicy")
+                    .font(.title)
+            }
+            
             ForEach(model) { dish in
                 HStack {
                     Image(dish.imageURL)
@@ -23,7 +28,7 @@ struct ContentView: View {
                         .lineLimit(nil)
                     
                     Spacer()
-                    
+
                     if(dish.isSpicy) {
                         Image("spicy-icon")
                             .resizable()
