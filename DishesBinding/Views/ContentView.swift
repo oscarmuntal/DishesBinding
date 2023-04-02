@@ -22,9 +22,13 @@ struct ContentView: View {
                         .font(.title)
                         .lineLimit(nil)
                     
-                    Image("spicy-icon")
-                        .resizable()
-                        .frame(width: 35, height: 35)
+                    Spacer()
+                    
+                    if(dish.isSpicy) {
+                        Image("spicy-icon")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                    }
                 }
             }
         }
