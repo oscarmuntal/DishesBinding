@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     private let model = Dish.all()
+    @State private var isSpicy = false
     
     var body: some View {
         List {
-            Toggle(isOn: .constant(false)) {
+            Toggle(isOn: $isSpicy) {
                 Text("Spicy")
                     .font(.title)
             }
